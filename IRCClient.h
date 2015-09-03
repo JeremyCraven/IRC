@@ -1,0 +1,12 @@
+void invalid_entry();
+void update_list_rooms();
+void update_list_users();
+void update_list_messages();
+static void create_user_event(GtkWidget * widget, gpointer data);
+static void create_room_event(GtkWidget * widget, gpointer data);
+static void send_message_event(GtkWidget * widget, gpointer data);
+static GtkWidget * create_list(const char * titleColumn, GtkListStore * model);
+static void insert_text(GtkTextBuffer * buffer, const char * initialText);
+static GtkWidget * create_text(const char * initialText);
+static gboolean time_handler(GtkWidget * widget);
+static void login_event();
